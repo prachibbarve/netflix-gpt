@@ -1,8 +1,10 @@
 import { useState } from "react";
-import "./App.css";
+import Body from "./components/Body"
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
 
 function App() {
-  return <div className="text-xl text-amber-900">Hello</div>;
+ 
+  return <Body />;
 }
 
 export default App;
