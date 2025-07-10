@@ -13,8 +13,36 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # Netflix GPT
 
-install react vite
-configure tailwind css
+- install react vite
+- configure tailwind css
+- Header
+- Routing of the app
+- login form
+- sign up form
+- form validation
+- useRef hook
+- firebase setup
+- deploying our app to production
+- Authentication - create sign up form
+- implement Sign In using firebase API
+- Created Redux store with UserSlice
+- implemented signout
+- updated user profile
+- bug fix: sign in user display name and profile picture
+- bug fix: if user not logged in redirect him to login page and vice versa
+- unsubscribed onauthstatechaged callback on component unmount
+- save all hardcoded URLs is utils/constants.js
+- Register for TMDB API and create a new app and get access token
+- get data from TMDB now playing movie list API
+- created custom hook for nowPlayingMovies
+- update store with Movies Data (create new slice)
+- planning for main cointainer and secondary container
+- fetch data for trailer video
+- custom hook for trailer video
+- update store with trailor video data
+- embeded youtube video
+- make it auto play
+- added tailwind classes to make it look it awesome
 
 # features
 
