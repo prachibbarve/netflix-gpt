@@ -43,6 +43,12 @@ If you are developing a production application, we recommend using TypeScript wi
 - embeded youtube video
 - make it auto play
 - added tailwind classes to make it look it awesome
+- build secondary cointaner
+  -built movie list
+  -built movie card
+- added tmdb image cdn ulr
+- made browse page amazing with tailwind css
+- created usePopularMovies, useUpcomingMovies, useTopRatedMovies hooks
 
 # features
 
