@@ -3,11 +3,13 @@ import React from "react";
 const VideoTitle = (props) => {
   // console.log(props);
   return (
-    <div className="text-white w-screen aspect-video absolute z-10  pt-[15%] px-10  bg-gradient-to-r from-black">
+    <div className="text-white w-screen aspect-video absolute z-10  pt-[15%] px-4 md:px-10  bg-gradient-to-r from-black">
       <h1 className="text-3xl font-bold py-4 px-8">{props.mtitle}</h1>
-      <div className=" px-8 text-lg w-1/3">{props.overview}</div>
+      <div className="hidden md:inline-block px-8 text-lg w-1/3">
+        {props.overview}
+      </div>
       <div className="mx-8 flex my-2">
-        <button className="bg-amber-50 text-sm text-black px-4 py-2 cursor-pointer rounded-lg flex hover:opacity-85">
+        <button className="bg-amber-50 text-sm text-black  px-2 md:px-4 py-2 cursor-pointer rounded-lg flex hover:opacity-85">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -24,7 +26,7 @@ const VideoTitle = (props) => {
           </svg>
           Play
         </button>
-        <button className=" bg-gray-600 text-sm p-2 ml-2.5 cursor-pointer rounded-lg flex justify-center align-middle hover:opacity-85">
+        <button className="hidden md:flex bg-gray-600 text-sm p-2 ml-2.5 cursor-pointer rounded-lg  justify-center align-middle hover:opacity-85">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -16,7 +16,7 @@ const SecondaryComponent = () => {
   return (
     movies && (
       <div className="bg-black w-screen">
-        <div className="-mt-52 relative z-10 m-4">
+        <div className="mt-0 md:-mt-52 relative z-10 m-4">
           <MovieList
             // @ts-ignore
             title={"Now Playing"}
