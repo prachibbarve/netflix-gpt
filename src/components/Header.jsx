@@ -64,11 +64,11 @@ const Header = () => {
     dispatch(changeLanguage(e.target.value));
   };
   return (
-    <div className="absolute w-screen py-2 bg-gradient-to-b from-black z-20 flex justify-between h-24 px-4  ">
-      <img alt="logo" src={NETFLIX_LOGO_URL}></img>
+    <div className="absolute w-screen py-2 bg-gradient-to-b from-black z-20 flex flex-col md:flex-row justify-between h-24 px-4  ">
+      <img alt="logo" src={NETFLIX_LOGO_URL} className="w-56 ml-18"></img>
       {user ? (
         <>
-          <div className="flex align-middle">
+          <div className="flex align-middle justify-between">
             {showGPTSearch && (
               <select
                 className="bg-black text-white px-2 h-9 mt-1.5 mr-2"

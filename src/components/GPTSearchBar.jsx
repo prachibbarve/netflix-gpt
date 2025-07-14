@@ -26,7 +26,7 @@ const GPTSearchBar = () => {
   const LangKey = useSelector((store) => store.config.lang);
   return (
     <div className="w-screen">
-      <div className="flex justify-center align-middle ">
+      <div className="flex justify-center align-middle mt-5">
         <form
           className="w-auto border-4 border-black"
           onSubmit={(e) => e.preventDefault()}
@@ -35,7 +35,7 @@ const GPTSearchBar = () => {
             ref={searchTxt}
             type="text"
             placeholder={lang[LangKey].getSearchPlaceholder}
-            className="text-black bg-amber-50 px-4 py-2 w-96"
+            className="text-black bg-amber-50 px-4 py-2 w-75 md:w-96"
           />
           <button
             type="submit"

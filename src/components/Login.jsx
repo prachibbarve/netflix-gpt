@@ -97,11 +97,15 @@ const Login = () => {
     <>
       <Header />
       <div className="bg-gradient-to-b from-black absolute ">
-        <img alt="bg-image" src={BG_IMG} />
+        <img
+          alt="bg-image"
+          src={BG_IMG}
+          className="h-screen object-cover md:w-screen"
+        />
       </div>
       <div className="flex items-center justify-center relative top-28">
         <form
-          className="relative z-0 py-4 flex-col justify-items-center items-center text-white bg-black opacity-85 w-1/3"
+          className="relative  z-0 py-4 flex-col justify-items-center items-center text-white bg-black opacity-85 w-[90%] md:w-1/3"
           onSubmit={(e) => e.preventDefault()}
         >
           <p className="text-2xl">{isSignin ? "Sign In" : "Sign Up"}</p>

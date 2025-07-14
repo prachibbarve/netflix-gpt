@@ -53,6 +53,12 @@ If you are developing a production application, we recommend using TypeScript wi
 - added GPT search bar
 - added multilingual option
 - intigrate GPT API
+- Memoization
+- created gpt slice
+- reused movie list componet
+- added .env file
+- added .env file to gitignore
+- made website responsive
 
 # features
 
