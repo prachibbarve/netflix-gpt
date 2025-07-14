@@ -49,6 +49,10 @@ If you are developing a production application, we recommend using TypeScript wi
 - added tmdb image cdn ulr
 - made browse page amazing with tailwind css
 - created usePopularMovies, useUpcomingMovies, useTopRatedMovies hooks
+- added gpt search button
+- added GPT search bar
+- added multilingual option
+- intigrate GPT API
 
 # features
 

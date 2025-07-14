@@ -8,7 +8,10 @@ import SecondaryComponent from "./SecondaryComponent";
 import usePopularMovies from "../hooks/usePopularMovies";
 import useTopRatedMovies from "../hooks/useTopRatedMovies";
 import useUpcomingMovies from "../hooks/useUpcomingMovies";
+import GPTSearch from "./GPTSearch";
+import { useSelector } from "react-redux";
 const Browse = () => {
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
   useNowPlayingMovies();
   usePopularMovies();
   useUpcomingMovies();
@@ -28,8 +31,14 @@ const Browse = () => {
          *    movielist *n
          *      cards
          */}
-        <MainContainer />
-        <SecondaryComponent />
+        {showGptSearch ? (
+          <GPTSearch />
+        ) : (
+          <>
+            <MainContainer />
+            <SecondaryComponent />
+          </>
+        )}
       </div>
     </>
   );
