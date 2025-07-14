@@ -100,7 +100,10 @@ const Login = () => {
         <img alt="bg-image" src={BG_IMG} />
       </div>
       <div className="flex items-center justify-center relative top-28">
-        <form className="relative z-0 py-4 flex-col justify-items-center items-center text-white bg-black opacity-85 w-1/3">
+        <form
+          className="relative z-0 py-4 flex-col justify-items-center items-center text-white bg-black opacity-85 w-1/3"
+          onSubmit={(e) => e.preventDefault()}
+        >
           <p className="text-2xl">{isSignin ? "Sign In" : "Sign Up"}</p>
           {isSignin ? (
             ""
@@ -142,7 +145,7 @@ const Login = () => {
 
           <div>
             <button
-              type="button"
+              type="submit"
               className="px-4 py-2 m-4 w-72 duration-200 cursor-pointer hover:bg-red-900 text-white bg-[#E50914] rounded-md"
               onClick={() => handleOnclick()}
             >

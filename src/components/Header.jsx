@@ -9,6 +9,7 @@ import { NETFLIX_LOGO_URL } from "../utils/constants";
 import { toggleSearchView } from "../utils/GPTSlice";
 import { SUPPORTED_LANG } from "../utils/constants";
 import { changeLanguage } from "../utils/appConfigSlice";
+import { deleteMovieResults } from "../utils/GPTSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -56,6 +57,7 @@ const Header = () => {
   const handleGPTSeachClick = () => {
     //toggle GPT search page
     dispatch(toggleSearchView());
+    dispatch(deleteMovieResults());
   };
 
   const handleLangChange = (e) => {

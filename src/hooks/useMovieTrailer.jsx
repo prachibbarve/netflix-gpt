@@ -1,11 +1,13 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { API_OPTIONS } from "../utils/constants";
 import { addTrailerVideo } from "../utils/movieSlice";
 import { useEffect } from "react";
 
 const useMovieTrailer = (props) => {
   const dispatch = useDispatch();
+  // @ts-ignore
+  const MovieTrailor = useSelector((store) => store.movies.MovieTrailor);
   //fetch movie trailor and update trailer data in store
   const movieVideos = async () => {
     const data = await fetch(
@@ -23,7 +25,7 @@ const useMovieTrailer = (props) => {
   };
 
   useEffect(() => {
-    movieVideos();
+    !MovieTrailor && movieVideos();
   }, []);
 };
 

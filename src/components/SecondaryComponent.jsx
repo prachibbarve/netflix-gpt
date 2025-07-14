@@ -4,8 +4,8 @@ import { useSelector } from "react-redux";
 const SecondaryComponent = () => {
   // @ts-ignore
   const movies = useSelector((store) => store.movies);
-  console.log(movies);
-  console.log(movies.nowPlayingMovies);
+  //console.log(movies);
+  //console.log(movies.nowPlayingMovies);
   /**
    * movie list - popular
    *    card* n
