@@ -100,7 +100,7 @@ const Login = () => {
         <img
           alt="bg-image"
           src={BG_IMG}
-          className="h-screen object-cover md:w-screen"
+          className="h-screen object-cover sm:w-screen md:w-screen"
         />
       </div>
       <div className="flex items-center justify-center relative top-28">
